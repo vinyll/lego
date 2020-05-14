@@ -20,7 +20,9 @@ It will transform your HTML in [Brick](https://github.com/polight/brick) classes
 Demo: [view in action](https://lego.js.org/demo/) – [checkout the source](https://github.com/Polight/lego/tree/master/demo/bricks)
 
 
-## Installation
+## Quick start
+
+### Installation
 
 Lego is based on [npm](npmjs.com) and latest [node](https://nodejs.org/).
 
@@ -28,11 +30,6 @@ You should install the package from your project folder:
 ```
 npm i @polight/lego
 ```
-
-That's pretty much it!
-
-
-## Quick start
 
 ## Hello World
 
@@ -48,16 +45,18 @@ Create a file called __bricks/hello-world.html__:
 </script>
 ```
 
-Compile with `npx lego bricks`
+Run `npx lego bricks` for compiling
 
-And use it in your __index.html__
+And use this file in your __index.html__:
 
 ```html
 <script src="./dist/index.js" type="module"></script>
-<hello-world />
+<hello-world></hello-world>
 ```
 
-#### Explanation
+Run your favorite server and open your browser. ✨
+
+#### Understanding what just happened
 
 `npx lego bricks` created _dist/hello-world.js_. Checkout that basic JS file, that's a simple [Brick](https://github.com/polight/brick) instance that looks like:
 
